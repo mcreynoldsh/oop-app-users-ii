@@ -17,11 +17,11 @@ class User:
     def delete_post(self,post_num):
         self.posts.remove(self.posts[post_num-1])      
 
-person = User("Tyler","tyler29@gmail.com",2345603)
+user_tyler = User("Tyler","tyler29@gmail.com",2345603)
 
-person2 = User("Jane","janejane@gmail.com",3049585)
-person.post("first post")
-person.post("second posts")
-print(person.see_posts())
-person.delete_post(2)
-print(person.see_posts())
+user_jane = User("Jane","janejane@gmail.com",3049585)
+user_tyler.post("first post")
+user_tyler.post("second posts")
+print(user_tyler.see_posts())
+user_tyler.delete_post(2)
+print(user_tyler.see_posts())
